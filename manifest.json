@@ -1,0 +1,16 @@
+{
+    "name": "ExtensionFilter",
+    "description": "Filter Chrome extensions based on URL.",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "permissions": ["management"],
+    "icons": {
+        "128": "img/filter.png"
+    },
+    "action": {
+      "default_popup": "actions/popup.html"
+    },
+    "background": {
+      "service_worker": "scripts/background.js"
+    }
+}
