@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ExtensionFilter Settings</title>
+        <link rel="stylesheet" href="../css/option.css">
+    </head>
+    <body>
+        <script src="../scripts/option.js" type="module"></script>
+        <table id="rules">
+            <thead>
+                <tr>
+                    <th class="id">ID</th>
+                    <th class="ext">Extension</th>
+                    <th class="url">URL</th>
+                    <th class="motion">Motion</th>
+                    <th class="enable">Enable</th>
+                    <th class="reload">If reload</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <div class="custom-select">
+            <div class="selected-option">
+            </div>
+            <ul class="options">
+            </ul>
+        </div>
+        <input id="url_rule" type="text" name="url_rule">
+        <label for="url_rule">URL</label>
+        <select id="motions" name="motions">
+            <option value="on">on</option>
+            <option value="off">off</option>
+        </select>
+        <label for="motions">Motion</label>
+        <input type="checkbox" id="if_reload" name="if_reload" checked>
+        <label for="if_reload">If reload</label>
+        <button type="button" id="submit">submit</button>
+        <br>
+        <label for="del_id">delete id</label>
+        <input id="del_id" name="del_id" type="number" min="1">
+        <button type="button" id="submit_del">delete</button>
+        <br>
+        <label for="disable_id">disable/enable id</label>
+        <input id="disable_id" name="disable_id" type="number" min="1">
+        <button type="button" id="submit_disable">disable/enable</button>
+    </body>
+</html>

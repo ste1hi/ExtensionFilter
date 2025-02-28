@@ -1,4 +1,4 @@
 .PHONY: all
 
 all:
-	zip ExtentionFilter.zip actions/* img/* manifest.json
+	zip ExtensionFilter.zip css/* img/* html/* script/* manifest.json
